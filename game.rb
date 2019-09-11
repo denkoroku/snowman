@@ -22,6 +22,7 @@ class Game
 
   def is_won?
     if @hidden_word.is_guessed?(@guessed_letters)
+      puts "You won...Well Done!"
       return true
     else
       return false

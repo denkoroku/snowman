@@ -7,6 +7,12 @@ require_relative ('./hidden_word')
  game = Game.new(player, hidden_word)
 
  while game.is_won? == false && player.has_lives?
+   print "
+   _
+Y (,)
++( : )
+|( : ) "
+
    print "Enter your guess letter: "
    guess = gets.chomp
    game.make_guess(guess)

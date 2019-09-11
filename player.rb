@@ -13,6 +13,7 @@ class Player
     if @number_of_lives > 0
       return true
     else
+      puts "Your snowman melted :("
       return false
     end
   end

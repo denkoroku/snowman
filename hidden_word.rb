@@ -26,7 +26,7 @@ def initialize(word)
   end
 
   def is_guessed?(letters)
-    return true if @word.chars == letters
+    return true if @word.chars.sort == letters.sort
     return false
 
   end
